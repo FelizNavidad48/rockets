@@ -4,5 +4,8 @@
 
 .bg-image {
     /* Set the background image */
-    background-image: url('../images/wallpaper.jpg');
+    background-image: url('./images/wallpaper.jpg');
+  }
+*:focus {
+    outline: none;
   }
