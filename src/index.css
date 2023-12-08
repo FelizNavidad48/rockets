@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-image {
+    /* Set the background image */
+    background-image: url('../images/wallpaper.jpg');
+  }
