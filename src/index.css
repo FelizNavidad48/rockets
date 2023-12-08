@@ -9,3 +9,8 @@
 *:focus {
     outline: none;
   }
+
+.flagOnHover:hover {
+  background-image: url('./images/usa.png');
+
+}

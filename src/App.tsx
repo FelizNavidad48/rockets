@@ -15,6 +15,13 @@ function App() {
     "Falcon Heavy" : "falcon_heavy",
   };
 
+  const namesAndCountries: DictType = {
+    "Falcon 9" : "usa",
+    "Falcon Heavy" : "usa",
+  };
+
+
+
   useEffect(() => {
 
     const rockets = Object.keys(namesAndUrls);
@@ -34,11 +41,11 @@ function App() {
   return (
     <div className='font-rb bg-image bg-cover h-screen flex flex-col items-center'>
       <div className=' absolute top-100'>
-        <input placeholder="" onChange={handleInputChange} className=' placeholder-white font-regular border-4
+        <input placeholder="" onChange={handleInputChange} className=' placeholder-white font-medium border-4
         caret-transparent text-5xl bg-black px-2 text-white h-28 w-250'></input>
-          <ul className='text-white'>
+          <ul className='text-white font-medium text-3xl'>
             {options.map((option, index) => (
-              <DropdownField name={option} url={namesAndUrls[option]} id={"dropdown_"+String(index)}/>
+              <DropdownField name={option} url={namesAndUrls[option]} id={"dropdown_"+String(index)} country={namesAndCountries[option]}/>
             ))}
           </ul>
       </div>
